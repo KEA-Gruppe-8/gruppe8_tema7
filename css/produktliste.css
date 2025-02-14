@@ -1,0 +1,50 @@
+main {
+  margin: 2rem;
+  font-family: "Host Grotesk", serif;
+}
+
+/* LOGO */
+.logo {
+  margin: 2rem;
+  text-align: center;
+}
+/* INDEX */
+.knapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+/* Gør billeder responsive */
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ens layout for hver gruppe af 3 */
+.recipe-card:nth-child(3n + 1) {
+  grid-column: 1 / 2; /* Stort billede i venstre kolonne */
+  grid-row: span 2; /* Fylder to rækker */
+}
+
+.recipe-card:nth-child(3n + 2) {
+  grid-column: 2 / 3; /* Øverste højre */
+  grid-row: auto;
+}
+
+.recipe-card:nth-child(3n + 3) {
+  grid-column: 2 / 3; /* Nederste højre */
+  grid-row: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .recipe-card img {
+    width: 80%;
+  }
+}
