@@ -1,8 +1,3 @@
-main {
-  margin: 2rem;
-  font-family: "Host Grotesk", serif;
-}
-
 /* LOGO */
 .logo {
   margin: 2rem;
@@ -15,7 +10,7 @@ main {
   grid-template-rows: auto;
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1rem;
   text-align: center;
   align-items: center;
 }

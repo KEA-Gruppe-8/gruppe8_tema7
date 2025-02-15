@@ -1,6 +1,21 @@
+/* FONTS 
+YESEVA ONE: font-family: "Yeseva One", serif;
+ALOJA:
+PIERSON LIGHT:  */
+
+/* COLORS
+GRØN: #799A84
+BEIGE: #F5F4F0
+BRUN: #734E1A  */
+
 /* GENERAL STYLING */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* MAIN STYLING */
+main {
+  background-color: #f5f4f0;
 }
