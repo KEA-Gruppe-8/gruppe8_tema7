@@ -10,15 +10,17 @@ function showList(recipes) {
     .map(
       (recipe) => `
          <div class="recipe-card">
-         <div class="knap">
+        
+             <div>   
+            <img src="${recipe.image}" alt="${recipe.name}"></div>
+             <div class="knap">
                 <a href="opskrifter.html?id=${recipe.id}">${recipe.name}</a>
             </div>
             <div>
                     <p class="cuisine">${recipe.cuisine}</p>
                 </div>
-             <div>   
-            <img src="${recipe.image}" alt="${recipe.name}"></div>
             </div>
+
       `
     )
     .join("");
