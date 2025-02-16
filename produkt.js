@@ -25,7 +25,7 @@ function showRecipe(recipe) {
       <div class="produkt_billede_info">
           <div><img src="${recipe.image}" alt="${recipe.name}"></div>
           <div>
-              <p>Preparation time: ${recipe.prepTimeMinutes} min</p>
+              <p>Prepa ration time: ${recipe.prepTimeMinutes} min</p>
               <p>Cooking time: ${recipe.cookTimeMinutes} min</p>
               <p>Servings: ${recipe.servings}</p>
               <p>Difficulty: ${recipe.difficulty}</p>
