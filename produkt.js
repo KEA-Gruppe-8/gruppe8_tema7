@@ -1,4 +1,3 @@
-// Hent ID fra URL'en
 const myrecipe = new URLSearchParams(window.location.search).get("id");
 let opskrifter = document.querySelector(".opskrifter");
 
@@ -8,7 +7,6 @@ if (!myrecipe) {
   fetch(`https://dummyjson.com/recipes/${myrecipe}`)
     .then((res) => res.json())
     .then((recipe) => {
-      // Du kan evt. tjekke, om recipe har en fejlmeddelelse, før du kalder showRecipe
       if (recipe.message) {
         opskrifter.innerHTML = `<p>${recipe.message}</p>`;
       } else {

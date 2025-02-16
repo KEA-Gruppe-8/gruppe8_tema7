@@ -14,3 +14,12 @@ img {
 .logo {
   width: 20%;
 }
+
+.produkt_billede_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.opskrift {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
