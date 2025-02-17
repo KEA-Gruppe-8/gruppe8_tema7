@@ -59,7 +59,13 @@ h1 {
   font-size: 1.3rem;
   color: #734e1a;
   text-align: center;
-  text-decoration: none;
+  /* text-decoration: none; */
+  transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.knap a:hover {
+  font-size: 1.5rem;
+  color: #5c3c12; /* lidt mørkere nuance for ekstra effekt */
 }
 
 /* SELECTOR KNAP */
@@ -70,13 +76,18 @@ select {
   background-color: #3e5a43;
   border-radius: 8px;
   border: 2px solid #2f4a36;
-  color: antiquewhite;
+  color: #f5f4f0;
   font-family: "Yeseva One", serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
+  .knapper {
+    margin-right: 4rem;
+  }
+
   .recipe-card img {
     width: 75%;
   }
@@ -96,12 +107,16 @@ select {
   /* KNAP A MED HOVER EFFEKT */
   .knap a {
     font-size: 2rem;
-
     transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 
   .knap a:hover {
     font-size: 2.5rem;
     color: #5c3c12; /* lidt mørkere nuance for ekstra effekt */
+  }
+
+  select {
+    font-size: 1rem;
+    margin-left: 8.2rem;
   }
 }
