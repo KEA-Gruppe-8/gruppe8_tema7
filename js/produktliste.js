@@ -1,14 +1,34 @@
 let knapper = document.querySelector(".knapper");
 
-fetch("https://dummyjson.com/recipes")
-  .then((response) => response.json())
-  .then((data) => showList(data.recipes));
+const selectElement = document.querySelector("#selectElement");
 
-function showList(recipes) {
-  console.log(recipes);
-  const markup = recipes
-    .map(
-      (recipe) => `
+function showProduct(event) {
+  // console.log(event.target.value);
+  fetch(`https://dummyjson.com/recipes/tag/Pakistani`)
+    .then((response) => response.json())
+    .then((data) => showList(data.recipes));
+
+  function showList(recipes) {
+    console.log(recipes);
+
+    const markup = recipes
+
+      .filter((recipe) => {
+        if (event) {
+          if (event.target.value == "italian") {
+            return recipe.italian;
+          } else if (event.target.value == "pakistani") {
+            return recipe.pakistani;
+          } else {
+            return true;
+          }
+        } else {
+          return true;
+        }
+      })
+
+      .map(
+        (recipe) => `
          <div class="recipe-card">
         
              <div>   
@@ -23,9 +43,13 @@ function showList(recipes) {
             </div>
 
       `
-    )
-    .join("");
+      )
+      .join("");
 
-  console.log(markup);
-  knapper.innerHTML = markup;
+    console.log(markup);
+    knapper.innerHTML = markup;
+  }
 }
+selectElement.addEventListener("change", showProduct);
+
+showProduct();
