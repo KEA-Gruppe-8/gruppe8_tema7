@@ -54,13 +54,15 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 20px; /* Afstand mellem links */
+  gap: 30px; /* Afstand mellem links */
   margin-top: 10px;
 }
 
 .nav-links a {
   font-family: "Pierson", sans-serif;
   color: #4c6f57;
+  -webkit-text-stroke: 0.8px #4c6f57; /* Tilføjer en stroke i samme farve */
+  text-shadow: 0.5px 0.5px 0 #4c6f57; /* Blødere kant for bedre effekt */
 }
 
 @media screen and (min-width: 768px) {
