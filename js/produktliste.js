@@ -1,11 +1,29 @@
 let knapper = document.querySelector(".knapper");
 
-fetch("https://dummyjson.com/recipes")
-  .then((response) => response.json())
-  .then((data) => showList(data.recipes));
+const selectElement = document.querySelector("#selectElement");
+
+function showProduct(event) {
+  // console.log(event.target.value);
+  let url;
+  if (event) {
+    if (event.target.value == "italian") {
+      url = `https://dummyjson.com/recipes/tag/Italian`;
+    } else if (event.target.value == "pakistani") {
+      url = `https://dummyjson.com/recipes/tag/Pakistani`;
+    } else {
+      url = `https://dummyjson.com/recipes/`;
+    }
+  } else {
+    url = `https://dummyjson.com/recipes/`;
+  }
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => showList(data.recipes));
+}
 
 function showList(recipes) {
   console.log(recipes);
+
   const markup = recipes
     .map(
       (recipe) => `
@@ -29,3 +47,7 @@ function showList(recipes) {
   console.log(markup);
   knapper.innerHTML = markup;
 }
+
+selectElement.addEventListener("change", showProduct);
+
+showProduct();
