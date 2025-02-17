@@ -17,7 +17,7 @@ function showList(recipes) {
                     <p class="cuisine">${recipe.cuisine}</p>
                 </div>
              <div class="knap">
-                <a href="opskrifter.html?id=${recipe.id}">${recipe.name}</a>
+                <a href="produkt.html?id=${recipe.id}">${recipe.name}</a>
             </div>
             
             </div>
