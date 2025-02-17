@@ -1,4 +1,4 @@
-/* INDEX */
+/* PRODUKTLISTE */
 .knapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -62,6 +62,20 @@ h1 {
   text-decoration: none;
 }
 
+/* SELECTOR KNAP */
+
+select {
+  margin-left: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #3e5a43;
+  border-radius: 8px;
+  border: 2px solid #2f4a36;
+  color: antiquewhite;
+  font-family: "Yeseva One", serif;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (min-width: 768px) {
   .recipe-card img {
     width: 75%;
@@ -79,7 +93,15 @@ h1 {
     margin-top: 1rem;
   }
 
+  /* KNAP A MED HOVER EFFEKT */
   .knap a {
     font-size: 2rem;
+
+    transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .knap a:hover {
+    font-size: 2.5rem;
+    color: #5c3c12; /* lidt mørkere nuance for ekstra effekt */
   }
 }
