@@ -1,4 +1,4 @@
-/* INDEX */
+/* PRODUKTLISTE */
 .knapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -62,6 +62,15 @@ h1 {
   text-decoration: none;
 }
 
+select {
+  margin-left: 1rem;
+  padding: 0.6rem;
+  background-color: #4c6f57;
+  border-radius: 10px;
+  border: none;
+  color: antiquewhite;
+  font-family: "Yeseva One", serif;
+}
 @media screen and (min-width: 768px) {
   .recipe-card img {
     width: 75%;
