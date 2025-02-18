@@ -6,7 +6,9 @@ function showProduct(event) {
   // console.log(event.target.value);
   let url;
   if (event) {
-    if (event.target.value == "italian") {
+    if (event.target.value == "all") {
+      url = `https://dummyjson.com/recipes/`;
+    } else if (event.target.value == "italian") {
       url = `https://dummyjson.com/recipes/tag/Italian`;
     } else if (event.target.value == "asian") {
       url = `https://dummyjson.com/recipes/tag/Asian`;
