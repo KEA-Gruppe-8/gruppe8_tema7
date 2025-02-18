@@ -76,6 +76,9 @@
     font-size: 30px;
     margin-bottom: 20px;
   }
+  .produkt_overskrift {
+    font-size: 25px;
+  }
 }
 .produkt_img {
   display: flex;
