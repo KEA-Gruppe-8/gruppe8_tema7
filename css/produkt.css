@@ -57,7 +57,6 @@
     font-size: 16px;
     line-height: 40px;
     color: #4c6f57;
-    background-color: lightgray;
     list-style-position: inside;
     padding-left: 20px;
   }
@@ -73,7 +72,6 @@
     margin-top: 40px;
     color: #734e1a;
     text-align: center;
-    font-size: 30px;
     margin-bottom: 20px;
   }
   .produkt_overskrift {
@@ -92,13 +90,14 @@
   font-family: "Pierson";
   line-height: 40px;
   font-size: 20px;
-  color: #4c6f57;
+  -webkit-text-stroke: 1px #4c6f57;
 }
 .instructions {
   font-family: "Pierson";
   font-size: 20px;
   line-height: 40px;
-  color: #000000;
+  color: #4c6f57;
+  -webkit-text-stroke: 1px #4c6f57;
 }
 .title {
   font-family: "Yeseva One", serif;
@@ -106,6 +105,11 @@
   color: #734e1a;
 }
 .title2 {
+  font-family: "Yeseva One", serif;
   margin-top: 40px;
   color: #734e1a;
+  font-size: 30px;
+}
+.ingredients ul {
+  -webkit-text-stroke: 1px #4c6f57;
 }
