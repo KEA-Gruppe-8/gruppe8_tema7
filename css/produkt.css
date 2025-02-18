@@ -1,15 +1,61 @@
-.logo {
-  width: 20%;
-}
-
-.produkt_billede_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .opskrift {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .produkt_overskrift {
   font-family: "Host Grotesk", serif;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  color: #734e1a;
+}
+.produkt_billede_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+.produkt_img img {
+  width: 50%;
+  display: block;
+}
+.produkt_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produkt_overskrift {
+  font-family: "Aloja", sans-serif;
+}
+.produkt_info {
+  font-family: "Pierson";
+  line-height: 40px;
+  font-size: 20px;
+  color: #4c6f57;
+}
+.instructions {
+  font-family: "Pierson";
+  font-size: 20px;
+  line-height: 40px;
+  color: #4c6f57;
+}
+.ingredients {
+  font-family: "Pierson";
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ingredients_ul {
+  grid-column: 2/3;
+  font-size: 20px;
+  line-height: 40px;
+  color: #4c6f57;
+}
+.title {
+  font-family: "Yeseva One", serif;
+  margin-top: 40px;
+  color: #734e1a;
+}
+.title2 {
+  margin-top: 40px;
+  color: #734e1a;
 }
