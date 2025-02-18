@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/************************** Kontakt ********************/
+
+.grid_about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 7%;
+  color: #4c6f57;
+}
+
+.grid_about h1 {
+  font-family: "Aloja";
+  font-size: 3.5rem;
+  padding-bottom: 4%;
+}
+.grid_about h2 {
+  font-family: "Pierson";
+  font-size: 1.4rem;
+}
+.grid_about p {
+  font-family: "Yeseva One", serif;
+  font-size: 1rem;
+  line-height: 30px;
+  padding-top: 5%;
+}
+
+.grid_contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 7%;
+  color: #4c6f57;
+  text-align: right;
+}
+
+.grid_contact h2 {
+  font-family: "Aloja";
+  font-size: 2.6rem;
+}
+
+.grid_contact p {
+  font-family: "Pierson";
+  font-size: 1.7rem;
+  padding-top: 6%;
+}
+
+@media (max-width: 768px) {
+  .grid_about {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
