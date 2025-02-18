@@ -13,8 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cutive+Mono&family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inconsolata:wght@200..900&family=Italiana&family=Just+Me+Again+Down+Here&family=Slabo+27px&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
     <link rel="stylesheet" href="/css/produkt.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/produkt.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
             <img src="assets/some.svg" alt="some_ikoner">
         </div>
         <div class="logo">
-            <a href="index.html"><img class="logo_img" src="bitefulllogo.png" alt="logo"></a>
+            <a href="index.html"><img class="logo_img" src="assets/logo.svg" alt="logo"></a>
         </div>
         <nav class="nav-links">
             <a href="produktliste.html">RECIPES</a>
@@ -35,16 +38,16 @@
 
     <main>
         <div class="opskrifter">
-            <h1 class="produkt_overskrift">recipe.name</h1>
-            <div class="produkt_billede_info">
+            <!-- <h1 class="produkt_overskrift">recipe.name</h1> -->
+            <!-- <div class="produkt_billede_info">
                 <div><img src="recipe.image" alt="recipe.name"></div>
                 <div>
-                    <p>Preparation time: recipe.prepTimeMinutes min</p>
-                    <p>Cooking time: recipe.cookTimeMinutes min</p>
-                    <p>Servings: recipe.servings</p>
-                    <p>Difficulty: recipe.difficulty</p>
-                    <p>Cuisine: recipe.cuisine</p>
-                    <p>Calories per serving: recipe.caloriesPerServing</p>
+                    <p>Preparation time: ${recipe.prepTimeMinutes} min</p>
+                    <p>Cooking time: ${recipe.cookTimeMinutes} min</p>
+                    <p>Servings: ${recipe.servings}</p>
+                    <p>Difficulty: ${recipe.difficulty}</p>
+                    <p>Cuisine: ${recipe.cuisine}</p>
+                    <p>Calories per serving: ${recipe.caloriesPerServing}</p>
                 </div>
             </div>
             <div class="opskrift">
@@ -59,12 +62,12 @@
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer></footer>
 
-    <script src="/js/produkt.js"></script>
+
 </body>
 
 </html>
