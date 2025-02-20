@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
 /************************** Kontakt ********************/
 
 .grid_about {
@@ -19,16 +14,19 @@ img {
 }
 
 .grid_about h1 {
-  font-family: "Aloja";
+  font-family: "Yeseva One", serif;
+  color: #734e1a;
   font-size: 3.5rem;
   padding-bottom: 4%;
 }
 .grid_about h2 {
-  font-family: "Pierson";
+  font-family: "Yeseva One", serif;
+  color: #734e1a;
   font-size: 1.4rem;
 }
 .grid_about p {
-  font-family: "Yeseva One", serif;
+  font-family: "Pierson";
+  -webkit-text-stroke: 1px #4c6f57;
   font-size: 1rem;
   line-height: 30px;
   padding-top: 5%;
@@ -44,14 +42,21 @@ img {
 }
 
 .grid_contact h2 {
-  font-family: "Aloja";
+  font-family: "Yeseva One", serif;
+  color: #734e1a;
   font-size: 2.6rem;
 }
 
 .grid_contact p {
   font-family: "Pierson";
+  -webkit-text-stroke: 1px #4c6f57;
   font-size: 1.7rem;
   padding-top: 6%;
+}
+
+.grid_img img {
+  width: 100%;
+  display: block;
 }
 
 @media (max-width: 768px) {
